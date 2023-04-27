@@ -1,0 +1,40 @@
+@import (inline) "normalize.css";
+
+@import "definitions";
+@import "basics";
+@import "components";
+
+.container {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.parallax {
+	background-size: cover;
+}
+
+.spacer(@height) {
+	&:before {
+		content: '\00a0';
+		display: block;
+		padding-top: @height;
+	}
+}
+
+.spacer200 {
+	.spacer(200px);
+}
+.spacer500 {
+	.spacer(500px);
+}
+.spacer800 {
+	.spacer(800px);
+}
+.spacer1200 {
+	.spacer(1200px);
+}
+
+.bg1 {
+	background-image: url('../img/bg1.jpg');
+}

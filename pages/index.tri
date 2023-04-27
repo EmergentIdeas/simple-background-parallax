@@ -1,0 +1,31 @@
+__::start__
+<div class="page page-landing">
+	<div class="container">
+		<div class="parallax bg1">
+			<div class="spacer200"></div>
+		</div>
+		<div class="spacer200"></div>
+		<div class="parallax bg1">
+			<div class="spacer200"></div>
+		</div>
+		<div class="spacer500"></div>
+		<div class="parallax bg1">
+			<div class="spacer200"></div>
+		</div>
+		<div class="spacer200"></div>
+		<div class="parallax bg1">
+			<div class="spacer200"></div>
+		</div>
+		<div class="spacer1200"></div>
+		<div class="parallax bg1">
+			<div class="spacer1200"></div>
+		</div>
+		<div class="spacer1200"></div>
+		<div class="parallax bg1">
+			<div class="spacer200"></div>
+		</div>
+		
+	</div>
+
+</div>
+__::end__
