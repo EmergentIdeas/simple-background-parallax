@@ -15,13 +15,13 @@ adjust the background movement for that range.
 ## Install
 
 ```
-npm i @dankolz/simple-background-parallax
+npm i simple-background-parallax
 ```
 
 ## Usage
 
 ```
-const SimpleBackgroundParallax = require('@dankolz/simple-background-parallax')
+const SimpleBackgroundParallax = require('simple-background-parallax')
 
 let sbp = new SimpleBackgroundParallax('.parallax')
 sbp.start()
