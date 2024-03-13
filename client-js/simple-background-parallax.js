@@ -40,6 +40,11 @@ class SimpleBackgroundParallax {
 		return { top: Math.round(top), left: Math.round(left) };
 	}
 	
+	_setElementProperties(element, percentMovement) {
+		element.style['background-position'] = `center ${percentMovement}%`
+
+	}
+	
 	_positionBackgrounds() {
 		let nodes = document.querySelectorAll(this.elementSelector)
 		nodes.forEach(element => {
@@ -54,7 +59,7 @@ class SimpleBackgroundParallax {
 			
 			let percentMovement = (where / range) * 100
 			percentMovement = Math.max(0, Math.min(100, percentMovement))
-			element.style['background-position'] = `center ${percentMovement}%`
+			this._setElementProperties(element, percentMovement)
 		})
 	}
 }
