@@ -19,6 +19,9 @@ class SimpleBackgroundParallax {
 		window.addEventListener('scroll', evt => {
 			requestAnimationFrame(this._positionBackgrounds.bind(this))
 		})
+		window.addEventListener('resize', evt => {
+			requestAnimationFrame(this._positionBackgrounds.bind(this))
+		})
 		this._positionBackgrounds()
 	}
 
