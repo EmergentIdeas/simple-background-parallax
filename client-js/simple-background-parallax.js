@@ -44,8 +44,12 @@ class SimpleBackgroundParallax {
 	}
 	
 	_setElementProperties(element, percentMovement) {
-		element.style['background-position'] = `center ${percentMovement}%`
-
+		if(element.tagName === 'IMG') {
+			element.style['object-position'] = `center ${percentMovement}%`
+		}
+		else {
+			element.style['background-position'] = `center ${percentMovement}%`
+		}
 	}
 	
 	_positionBackgrounds() {

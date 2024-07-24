@@ -31,6 +31,9 @@ class SimpleBackgroundParallax {
 		window.addEventListener('scroll', evt => {
 			requestAnimationFrame(this._positionBackgrounds.bind(this))
 		})
+		window.addEventListener('resize', evt => {
+			requestAnimationFrame(this._positionBackgrounds.bind(this))
+		})
 		this._positionBackgrounds()
 	}
 
@@ -53,8 +56,12 @@ class SimpleBackgroundParallax {
 	}
 	
 	_setElementProperties(element, percentMovement) {
-		element.style['background-position'] = `center ${percentMovement}%`
-
+		if(element.tagName === 'IMG') {
+			element.style['object-position'] = `center ${percentMovement}%`
+		}
+		else {
+			element.style['background-position'] = `center ${percentMovement}%`
+		}
 	}
 	
 	_positionBackgrounds() {

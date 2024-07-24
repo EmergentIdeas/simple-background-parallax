@@ -14,12 +14,21 @@
 	background-size: cover;
 }
 
+.height(@height) {
+	height: @height;
+}
+
 .spacer(@height) {
 	&:before {
 		content: '\00a0';
 		display: block;
 		padding-top: @height;
 	}
+}
+
+.height200 {
+	.height(50px);
+	overflow: hidden;
 }
 
 .spacer200 {

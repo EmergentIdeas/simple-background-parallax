@@ -443,6 +443,10 @@ body {
 .parallax {
   background-size: cover;
 }
+.height200 {
+  height: 50px;
+  overflow: hidden;
+}
 .spacer200:before {
   content: '\00a0';
   display: block;
